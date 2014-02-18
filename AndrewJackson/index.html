@@ -4,53 +4,122 @@
 	<title>Axtone</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/hw-parallax.min.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
-<body>
+<body style="min-height:2000px; width:100%; background:black;">
 
 <!-- 100% hero image -->
 	<!-- TBN_packshot.jpg -->
+	<div class="parallax" data-image="img/hero-image.jpg" data-width="1400" data-height="935" style="min-height:935px; margin-bottom: 30px; padding: 30px;">
+		<div class="text-center">
+			<h1>Axwell</h1>
+			<p>Sample paragraph</p>
+		</div>
+	</div>
 
-<!--
-Tour Dates
-21-Feb - Vessel, San Francisco
-28-Feb - Create, Los Angeles
-5-Mar - Bijou, Boston
-6-Mar - The Mid, Chicago
-8-Mar - The Light (w/ Axwell), Las Vegas
-12-Mar - The Light, Las Vegas
-13-Mar - LessThan3, Washington DC
-15-Mar - Mister East, New Jersey
-27-Mar - Rok Bar, Miami
-5-Apr - Barbarella, Guatemala City
-12-Apr - Family, Brisbane
-17-Apr - Mill Hotel, Sydney
-19-Apr - Marquee, Sydney
-26-Apr - HQ, Adelaide
-2-May - Academy, Canberra
-3-May - Platinum , Gold Goast
-9-May - Hypnotized, Bali
-10-May - Umbra, Jakarta
-More Dates To Be Announced 
--->
+	<div id="tour-dates" class="row">
+		<div class="text-center">
+			<h1>Tour Dates</h1>
+			<h5>21-Feb - Vessel, San Francisco</h5>
+			<h5>28-Feb - Create, Los Angeles</h5>
+			<h5>5-Mar - Bijou, Boston</h5>
+			<h5>6-Mar - The Mid, Chicago</h5>
+			<h5>8-Mar - The Light (w/ Axwell), Las Vegas</h5>
+			<h5>12-Mar - The Light, Las Vegas</h5>
+			<h5>13-Mar - LessThan3, Washington DC</h5>
+			<h5>15-Mar - Mister East, New Jersey</h5>
+			<h5>27-Mar - Rok Bar, Miami</h5>
+			<h5>5-Apr - Barbarella, Guatemala City</h5>
+			<h5>12-Apr - Family, Brisbane</h5>
+			<h5>17-Apr - Mill Hotel, Sydney</h5>
+			<h5>19-Apr - Marquee, Sydney</h5>
+			<h5>26-Apr - HQ, Adelaide</h5>
+			<h5>2-May - Academy, Canberra</h5>
+			<h5>3-May - Platinum , Gold Goast</h5>
+			<h5>9-May - Hypnotized, Bali</h5>
+			<h5>10-May - Umbra, Jakarta</h5>
+		</div>
+	</div>
 
-<!-- divider1.jpg, 500px? -->
+	<div class="parallax" data-image="img/divider1.jpg" data-width="960" data-height="600" style="min-height:350px; margin-bottom: 30px; padding:30px;"></div>
 
-<!-- #TOKYOBYNIGHT twitter feed scroller -->
+	<div class="row">
+		<div class="col-md-offset-4 col-md-4">
+			<div class="video-container">
+				<p style="min-height:500px;">
+					<a class="twitter-timeline" height="500" data-dnt="false" href="https://twitter.com/search?q=%23TOKYOBYNIGHT" data-widget-id="435565506586636288">Tweets about "#TOKYOBYNIGHT"</a>
+				</p>
+			</div>
+		</div>
+	</div>
 
 <!-- divider2.jpg, 500px? -->
+	<div class="parallax" data-image="img/divider2.jpg" data-width="960" data-height="600" style="min-height:350px; margin-bottom: 30px; padding:30px;"></div>
 
 <!-- Youtube video cache -->
-	<!-- 
-	http://www.youtube.com/watch?v=Gy7mIGWAbEI
-	http://www.youtube.com/watch?v=7Aq5utPsVYk
-	http://www.youtube.com/watch?v=oivRZmBfU7M
-	-->
+	<div id="youtube-videos" class="row">
+		<div id="vid1" class="row">
+			<div class="col-md-offset-4 col-md-4">
+				<div class="video-container">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/Gy7mIGWAbEI" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="vid2" class="row">
+			<div class="col-md-offset-4 col-md-4">
+				<div class="video-container">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/7Aq5utPsVYk" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="vid3" class="row">
+			<div class="col-md-offset-4 col-md-4">
+				<div class="video-container">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/oivRZmBfU7M" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<!-- divider3.jpg, 500px? -->
+	<div class="parallax" data-image="img/divider3.jpg" data-width="960" data-height="600" style="min-height:350px; margin-bottom: 30px; padding:30px;"></div>
 
 <!-- Merch links -->
+	<div class="row">
+		<div class="text-center">
+			<h2>Get Your Merch</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-3 text-center" style="margin-left:13%;">
+				<a href="http://hooknsling.themerchgallery.com/shop/view_product/Reason_Tee__Grey_?n=4018662">
+					<img src="http://hooknsling.themerchgallery.com/pprs/cpimages/4018662/1403958/8403758/7/1/0/prod.jpg?b=11050327&v=1361287031&lv=11">
+					<p>Reason Tee (Grey)</p>
+				</a>
+			</div>
+			<div class="col-md-3 text-center">
+				<a href="http://hooknsling.themerchgallery.com/shop/view_product/Reason_Tee__Black_?n=4018667">
+					<img src="http://hooknsling.themerchgallery.com/pprs/cpimages/4018667/1403958/8403763/7/1/0/prod.jpg?b=11050327&v=1361287031&lv=11">
+					<p>Reason Tee (Black)</p>
+				</a>
+			</div>
+			<div class="col-md-3 text-center">
+				<a href="http://hooknsling.themerchgallery.com/shop/view_product/Reason_Tee__White_?n=4018657">
+					<img src="http://hooknsling.themerchgallery.com/pprs/cpimages/4018657/1403958/8403768/7/1/0/prod.jpg?b=11050327&v=1361287031&lv=11">
+					<p>Reason Tee (White)</p>
+				</a>
+			</div>
+		</div>
+	</div>
 
 <!-- Footer with logos and social links -->
+	<
 
+<script src="js/hw-parallax.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$('.parallax').parallax();
+
+	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+</script>
 </body>
 </html>
