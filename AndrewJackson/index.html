@@ -45,12 +45,10 @@
 	<div class="parallax" data-image="img/divider1.jpg" data-width="960" data-height="600" style="min-height:350px; margin-bottom: 30px; padding:30px;"></div>
 
 	<div class="row">
-		<div class="col-md-offset-4 col-md-4">
-			<div class="video-container">
-				<p style="min-height:500px;">
-					<a class="twitter-timeline" height="500" data-dnt="false" href="https://twitter.com/search?q=%23TOKYOBYNIGHT" data-widget-id="435565506586636288">Tweets about "#TOKYOBYNIGHT"</a>
-				</p>
-			</div>
+		<div class="col-md-offset-2 col-md-8">
+			<iframe src="http://widget.stagram.com/in/tag:TOKYOBYNIGHT/?s=200&w=4&h=2&b=1&bg=000000&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:100%; height: 430px; padding-left:5%;" ></iframe> <!-- Webstagram - web.stagram.com --> <!-- Webstagram - web.stagram.com -->
+			<!-- <a class="twitter-timeline" height="500" data-dnt="false" href="https://twitter.com/search?q=%23TOKYOBYNIGHT" data-widget-id="435565506586636288">Tweets about "#TOKYOBYNIGHT"</a> -->
+			<!-- <iframe src="http://www.intagme.com/in/?h=dG9reW9ieW5pZ2h0fGlufDE1MHw0fDN8MDAwMDAwfG5vfDV8dW5kZWZpbmVk" allowTransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:visible; width:600px; height: 465px" ></iframe> -->
 		</div>
 	</div>
 
@@ -59,26 +57,41 @@
 
 <!-- Youtube video cache -->
 	<div id="youtube-videos" class="row">
-		<div id="vid1" class="row">
-			<div class="col-md-offset-4 col-md-4">
-				<div class="video-container">
-					<iframe width="560" height="315" src="//www.youtube.com/embed/Gy7mIGWAbEI" frameborder="0" allowfullscreen></iframe>
+
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<div class="col-md-offset-2 col-md-8">
+						<div class="video-container">
+							<iframe width="560" height="315" src="//www.youtube.com/embed/Gy7mIGWAbEI" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-md-offset-2 col-md-8">
+						<div class="video-container">
+							<iframe width="560" height="315" src="//www.youtube.com/embed/7Aq5utPsVYk" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="col-md-offset-2 col-md-8">
+						<div class="video-container">
+							<iframe width="560" height="315" src="//www.youtube.com/embed/oivRZmBfU7M" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div id="vid2" class="row">
-			<div class="col-md-offset-4 col-md-4">
-				<div class="video-container">
-					<iframe width="560" height="315" src="//www.youtube.com/embed/7Aq5utPsVYk" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
-		</div>
-		<div id="vid3" class="row">
-			<div class="col-md-offset-4 col-md-4">
-				<div class="video-container">
-					<iframe width="560" height="315" src="//www.youtube.com/embed/oivRZmBfU7M" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
 		</div>
 	</div>
 
@@ -120,6 +133,11 @@
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	$('.parallax').parallax();
+
+	$('.carousel').carousel({
+		interval: false,
+		wrap: true
+	});
 
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
