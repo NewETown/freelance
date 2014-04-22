@@ -57,7 +57,7 @@ footer.row {
 }
 
 .parallax {
-	height:763px;
+	min-height:763px;
 	margin-bottom: 0px;
 	padding: 0px;
 }
