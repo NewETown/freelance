@@ -11,6 +11,9 @@ body {
 	display: block;
 	font-family: Helvetica, sans-serif;
 	color: #fff;
+	background-color: #1e1e1e;
+	min-height:100%; 
+	width:100%;
 }
 
 footer.row {
