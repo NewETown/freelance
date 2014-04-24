@@ -75,6 +75,34 @@ footer.row {
 }
 
 .bottom-center {
-	margin: 0 auto;
-	margin-top: 108px;
+	margin-left: 50%;
+	margin-top: 98px;
+}
+
+.glyphicon {
+	color: #8be3cd;
+	font-size: 36px;
+}
+
+footer p {
+	font-size: .7em;
+	padding-left: 10px;
+}
+
+footer p:nth-of-type(1) {
+	padding-top:15px;
+}
+
+footer p:last-child {
+	padding-bottom:5px;
+}
+
+.carousel-control.left {
+	background-image: none;
+	background-repeat: none;
+}
+
+.carousel-control.right {
+	background-image: none;
+	background-repeat: none;
 }
