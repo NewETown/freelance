@@ -25,7 +25,7 @@
 		<div class="bottom-center glyphicon glyphicon-chevron-down"></div>
 	</div>
 
-	<div class="row row-border" style="min-height:1028px;">
+	<div class="row row-border">
 		<div class="text-center">
 			<h2>TOUR DATES</h2>
 		</div>
@@ -131,30 +131,32 @@
 <script src="js/hw-parallax.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
-	$('.parallax').parallax();
-
-	var widget = new BIT.Widget({ 
-		"artist":"Hook N Sling", 
-		"div_id":"tour-dates",
-		"force_narrow_layout": "1"
-	});
-
-	widget.insert_events();
-
-	$('.carousel').carousel({
-		interval: false,
-		wrap: true
-	});
 
 	$(document).ready(function() {
-		setTimeout($(window).trigger('hwparallax.reconfigure'), 10000);
+
+		var widget = new BIT.Widget({ 
+			"artist":"Hook N Sling", 
+			"div_id":"tour-dates",
+			"force_narrow_layout": "1"
+		});
+
+		widget.insert_events();
+
+		$('.carousel').carousel({
+			interval: false,
+			wrap: true
+		});
+
+		$('.parallax').parallax();
+		
+		setTimeout(function(){$(window).trigger('hwparallax.reconfigure'); console.log("Timeout triggered");}, 8000);
 	});
 
 	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 
 <!-- AddThis Smart Layers BEGIN -->
-<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize  -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5358396d364f9175"></script>
 <script type="text/javascript">
   addthis.layers({
